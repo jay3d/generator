@@ -203,3 +203,6 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+
+## CLion
+.idea/

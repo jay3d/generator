@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.24)
 project(generator)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
@@ -11,9 +11,9 @@ else()
 	add_definitions(-std=c++11 -pedantic -Wall -Wextra)
 endif()
 
-set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
-include_directories(${CMAKE_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
 option(GENERATOR_USE_GLM "Use GLM instead of GML (experimental)" OFF)
 if(GENERATOR_USE_GLM)

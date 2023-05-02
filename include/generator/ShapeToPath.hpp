@@ -73,7 +73,7 @@ public:
 
 	Edges edges() const noexcept { return shape_.edges(); }
 
-	Vertices vertices() const { return *this; }
+	Vertices vertices() const { return Vertices{shape_}; }
 
 };
 
