@@ -36,6 +36,8 @@ public:
 
 	AnyShape& operator=(AnyShape&&) = default;
 
+	using Edges = AnyGenerator<Edge>;
+
 	AnyGenerator<Edge> edges() const noexcept;
 
 	AnyGenerator<ShapeVertex> vertices() const noexcept;
