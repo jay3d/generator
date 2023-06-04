@@ -8,6 +8,7 @@
 #define GENERATOR_ITERATOR_HPP
 
 #include <cassert>
+#include <iterator>
 #include <stdexcept>
 
 
