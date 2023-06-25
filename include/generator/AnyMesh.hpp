@@ -35,6 +35,8 @@ public:
 
 	AnyMesh& operator=(AnyMesh&&) = default;
 
+	using Triangles = AnyGenerator<Triangle>;
+
 	AnyGenerator<Triangle> triangles() const noexcept;
 
 	AnyGenerator<MeshVertex> vertices() const noexcept;
