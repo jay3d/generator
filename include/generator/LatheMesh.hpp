@@ -100,7 +100,7 @@ public:
 
 
 			vertex.texCoord[0] = shapeVertex.texCoord;
-			vertex.texCoord[1] = angle / mesh_->sweep_;
+			vertex.texCoord[1] = (angle - mesh_->start_) / mesh_->sweep_;
 
 			return vertex;
 		}
